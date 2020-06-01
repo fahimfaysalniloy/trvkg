@@ -1,0 +1,253 @@
+body{
+	font-family: Arial,Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+/*GLOBAL STYLES */
+.container{
+	width: 80%;
+	margin:auto;
+	overflow:hidden;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+.button_1{
+	height: 38px;
+	background: #e8491d;
+	border:0;
+	width: 80px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	border-radius: 8px;
+}
+.dark{
+	padding:15px;
+	background: #35424a;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*HEADER*/
+header{
+	background:#35424a;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+}
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+header #branding{
+	float: left;
+}
+header #branding h1{
+	margin: 0;
+}
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+#highlight,.current a{
+	color: #e8491d;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+/*SHOWCASE*/
+#showcase{
+	min-height: 400px;
+	background: url('../img/showcase.jpg') no-repeat 0 -400px;
+	text-align: center;
+	color: #ffffff;
+
+}
+#showcase h1{
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+#showcase p{
+	font-size: 20px;
+}
+#joinUs{
+	background: #35424a;
+	padding: 15px;
+	color: #ffffff;
+}
+#joinUs h1{
+	float: left;
+}
+#joinUs form{
+	float: right;
+	margin-top: 15px;
+}
+#joinUs input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+/*BOXES*/
+#boxes{
+	margin-top: 20px;
+}
+#boxes .box{
+	float: left;
+	width: 33%;
+	padding: 10px;
+	text-align: center;
+	box-sizing: border-box;
+}
+#boxes .box img{
+	width: 90px;
+	height: 68px;
+}
+
+/*sidebar*/
+aside#sidebar{
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+aside#sidebar .quote input,aside#sidebar .quote textarea{
+	width: 90%;
+	padding: 5px;
+}
+/*main col*/
+article#main-col{
+	float: left;
+	width: 65%;
+
+
+}
+
+/*services*/
+ul#services li{
+	padding: 20px;
+	border:#cccccc solid 1px;
+	margin-bottom: 5px;
+	background: #e6e6e6;
+}
+
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #e8491d;
+	text-align: center;
+	color: white;
+}
+/*ADDMISSION FORM*/
+#admission{
+	background-color: #C5E1A5;
+    font-size: 20px;
+    color: #272148;
+    padding-top: 40px;
+    min-height: 400px;
+}
+#instruction{
+	text-align: center;
+}
+#admission form{
+	width: 80%;
+	margin: auto;
+	padding-bottom: 20px;
+}
+#admission form label{
+	display: block;
+	font-family: cursive;
+    font-size: 25px;
+}
+#admission form input[type="text"] {
+	
+	width: 100%;
+}
+#admission form input{
+	height: 30px;
+	margin-bottom: 10px;
+}
+#chooseClass{
+	margin-bottom:  20px;
+	height: 30px;
+}
+#admission form .button_1{
+	margin-right: 40px;
+}
+#preview{
+	background-color: white;
+	display: none;
+}
+#preview{
+	
+	background-color: chocolate;
+    color: black;
+}
+#showInfo{
+	width: 80%;
+    margin: auto;
+}
+#showInfo h1{
+	text-align: center;
+	color: #eee;
+}
+#showInfo table{
+	margin:auto;
+	padding-bottom: 30px;
+}
+#showInfo td, th{
+	padding-right: 60px;
+	text-align: left;
+
+
+}
+
+
+/*media queries*/
+
+@media(max-width: 768px){
+	header #branding,header nav,header nav li,#joinUs h1,#joinUs form,
+	#boxes .box,article#main-col,
+	aside#sidebar{  
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header{
+		padding-bottom: 20px;
+
+	}
+	#showcase h1{
+		margin:40px;
+	}
+	#joinUs button,.quote button{
+		display: block;
+		width: 100%;
+		margin-top: 20px;
+	}
+	#joinUs form input[type="email"],
+	{
+		width: 100%;
+	}
+
+}
+
+

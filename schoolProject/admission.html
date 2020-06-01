@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="descripttion" content="The River View Kindergarten school details and official webpage">
+	<meta name="keywords" content="kg school,village education,trvkg,river view,the river view Kindergarten.kindergarten,belkuchi,sirajganj">
+	<meta name="author" content="fahim faysal niloy">
+	<title>River View  |Admission</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+			<h1><span id="highlight">RiverView</span> Our School</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="current"><a href="admission.html">Addmission</a></li>
+					<li><a href="services.html">Services</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+
+	</header>
+
+
+	
+
+
+
+	<section id="joinUs">
+		<div class="container">
+			<h1>Join Our Beautiful Family</h1>
+			<form>
+				<input type="email" name="email" placeholder="Enter your email....">
+				<button type="submit" class="button_1">Join</button>
+			</form>
+			
+		</div>
+		
+	</section>
+
+
+	<section id="admission">
+		<div class="container">
+			<h1 id="instruction">Instruction: Fill the form and press preview to see your information in this page live</h1>
+			<form>
+				<fieldset>
+					<legend>STUDENTS ADDMISSION FORM</legend>
+
+						<label for="sName">Student's Name:</label>
+						<input  id="sName" type="text" name="studentName" placeholder="Student's Full Name" required="">
+
+						<label for="fName">Father's Name:</label>
+						<input  id="fName" type="text" name="fatherName" placeholder="Father's Full Name" required="">
+
+						<label for="mName">Mother's Name:</label>
+						<input  id="mName" type="text" name="motherName" placeholder="Mother's Full Name" required="">
+
+						<label for="address">Address:</label>
+						<input id="address" type="text" name="address" placeholder="Present Address" required="">
+
+						<label for="age">Age:</label>
+						<input  id="age" type="number" name="age" placeholder="Age" required="">
+
+						<label for="email">Email:</label>
+						<input id="email" type="email" name="email" placeholder="example@me.com" required="">
+
+						<label for="bdate">Date of Birth:</label>
+						<input  id="bdate" type="date" name="dateOfBirth" placeholder="Birthdate" required="">
+						
+							<label><input  id="male" type="radio" name="gender" value="male" required="">Male</label>
+							<label><input type="radio" name="gender" value="female" required="">Female</label>	
+						
+
+						<label for="reg">Birth Registration No:</label>
+						<input id="reg" type="number" name="birthRegistration" placeholder="Must be of 13 digit" min="1000000000000" max="9999999999999" required>
+						<label>Choose Your Class:
+
+							<select  id="chooseClass" name="class" required="">
+								<option value="play">Play</option>
+								<option value="Nursery">Nursery</option>
+								<option value="One">One</option>
+								<option value="Two">Two</option>
+								<option value="Three">Three</option>
+								<option value="Four">Four</option>
+								<option value="Five">Five</option>
+							
+
+
+							</select>
+					</label>
+					<input onclick="showStuInfo()" class="button_1" type="button" value="Preview">
+					<input class="button_1" type="reset" name="reset">
+
+
+
+
+
+
+				</fieldset>
+			</form>
+
+			
+		</div>
+
+
+
+		<section id="preview">
+			<div class="container">
+				<div id="showInfo">
+					<h1>Hey <span id="mainName"></span>, Please check your info</h1>
+					<table >
+						<thead>
+							<tr><th>Criteria</th>    <th>Data</th></tr>
+							
+						</thead>
+						<tbody>
+							<tr>     <td>Students Name</td>   <td id="tableSName"></td>     </tr>
+							<tr>     <td>Fathers Name</td>   <td id="tableFName"></td>     </tr>
+							<tr>     <td>Mother's Name</td>   <td id="tableMName"></td>     </tr>
+							<tr>     <td>Address</td>   <td id="tableAddress"></td>     </tr>
+							<tr>     <td>Age</td>   <td id="tableAge"></td>     </tr>
+							<tr>     <td>Email</td>   <td id="tableEmail"></td>     </tr>
+							<tr>     <td>Date of Birth</td>   <td id="tableBirthday"></td>     </tr>
+							<tr>     <td>Gender</td>   <td id="tableGender"></td>     </tr>
+							<tr>     <td>Registration No.</td>   <td id="tableReg"></td>     </tr>
+							
+						</tbody>
+						
+					</table>
+
+					
+				
+
+
+
+
+				</div>
+			</div>
+		</section>
+		
+
+
+	</section>
+
+
+
+	
+
+
+
+	<footer>
+		<p>The River View Kindergarten, copyright &copy; 2020</p>
+		
+
+	</footer>
+
+
+
+
+<script type="text/javascript">
+						function showStuInfo(){
+							var sName=document.getElementById("sName").value;
+							var fName=document.getElementById("fName").value;
+							var mName=document.getElementById("mName").value;
+							var address=document.getElementById("address").value;
+							var age=document.getElementById("age").value;
+							var email=document.getElementById("email").value;
+							var birthday=document.getElementById("bdate").value;
+							if(document.getElementById("male").checked)
+								{var gender="Male";}
+							else{var gender="Female";}
+							console.log(gender);
+							var reg=document.getElementById("reg").value;
+
+
+
+
+
+							console.log(sName);
+							console.log(fName);
+							console.log(mName);
+							console.log(address);
+							console.log(age);
+							console.log(email);
+							console.log(birthday);
+							console.log(reg);
+
+
+							document.getElementById("tableSName").innerHTML="<p>"+sName+"</p>";
+							document.getElementById("tableFName").innerHTML="<p>"+fName+"</p>";
+							document.getElementById("tableMName").innerHTML="<p>"+mName+"</p>";
+							document.getElementById("tableAddress").innerHTML="<p>"+address+"</p>";
+							document.getElementById("tableAge").innerHTML="<p>"+age+"</p>";
+							document.getElementById("tableEmail").innerHTML="<p>"+email+"</p>";
+							document.getElementById("tableBirthday").innerHTML="<p>"+birthday+"</p>";
+							document.getElementById("tableGender").innerHTML="<p>"+gender+"</p>";
+							document.getElementById("tableReg").innerHTML="<p>"+reg+"</p>";
+							document.getElementById("mainName").innerHTML="<strong>"+sName+"</strong>";
+							document.getElementById("preview").style.display="block";
+
+
+
+
+
+							
+							
+							
+							
+
+						}
+						
+
+
+</script>
+				
+
+
+
+
+
+
+
+
+</body>
+</html>
